@@ -4,30 +4,45 @@ import About from "@/components/page/about";
 
 export default function Home() {
   return (
-    <div className="flex z-20 ">
-
-      <div className="w-1/5 hidden md:block">
-        <Nav />
-      </div>
-      <div className="w-full md:w-4/5 flex flex-col  relative ">
-
-      <div className="absolute inset-0 bg-slate-400 -z-10"></div>
-
-        <div className="flex justify-center items-center flex-grow">
+    <div className="relative ">
+      {/* Nav được thêm vào từ component Nav */}
+      <Nav />
+      
+      {/* Main content - giảm z-index để luôn nằm dưới nav */}
+      <main className="relative z-0 md:ml-[20%] ">
+        {/* Background */}
+        <div className="absolute inset-0 bg-slate-400 -z-10"></div>
+        
+        {/* Content sections với id khớp với nav */}
+        <section id="home" className="relative z-0 flex justify-center items-center flex-grow min-h-screen ">
           <IndexPage />
-        </div>
-        <div className="flex-grow">
+        </section>
+        
+        <section id="about" className="relative z-0 flex-grow ">
           <About />
-        </div>
+        </section>
+
+        <section id="skill" className="relative z-0 flex-grow  bg-gray-200">
+          <h2>Skills Section</h2>
+        </section>
+
+        <section id="project" className="relative z-0 flex-grow  bg-gray-300">
+          <h2>Projects Section</h2>
+        </section>
+
+        <section id="contact" className="relative z-0 flex-grow  bg-gray-400">
+          <h2>Contact Section</h2>
+        </section>
         <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      <div>1</div>
-      </div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+      </main>
     </div>
   );
 }
