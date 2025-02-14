@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+const {heroui} = require("@heroui/react");
+
 
 export default {
     darkMode: ["class"],
@@ -6,6 +8,7 @@ export default {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+	"./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
   	extend: {
@@ -58,7 +61,7 @@ export default {
   		}
   	}
   },
-  plugins: [addVariablesForColors],
+  plugins: [addVariablesForColors, heroui()],
 } satisfies Config;
 
 const colors = require("tailwindcss/colors");

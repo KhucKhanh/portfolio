@@ -1,6 +1,7 @@
 import Nav from "@/components/page/nav";
 import IndexPage from "@/components/page/indexpage";
 import About from "@/components/page/about";
+import Skill from "@/components/page/skill";
 
 export default function Home() {
   return (
@@ -22,15 +23,15 @@ export default function Home() {
           <About />
         </section>
 
-        <section id="skill" className="relative z-0 flex-grow  bg-gray-200">
-          <h2>Skills Section</h2>
+        <section id="skill" className="relative z-0 flex-grow ">
+          <Skill />
         </section>
 
-        <section id="project" className="relative z-0 flex-grow  bg-gray-300">
+        <section id="project" className="relative z-0 flex-grow ">
           <h2>Projects Section</h2>
         </section>
 
-        <section id="contact" className="relative z-0 flex-grow  bg-gray-400">
+        <section id="contact" className="relative z-0 flex-grow ">
           <h2>Contact Section</h2>
         </section>
         <div>1</div>
