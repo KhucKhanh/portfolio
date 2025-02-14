@@ -9,8 +9,8 @@ const IndexPage = () => {
     useEffect(() => {
         if (typedRef.current) {
             const typed = new Typed(typedRef.current, {
-                strings: ["Hello, I'm Khanh"],
-                typeSpeed: 40,
+                strings: ["Developer", "Designer", "Fullstack"],
+                typeSpeed: 60,
                 backSpeed: 50,
                 loop: true,
             });
@@ -20,12 +20,17 @@ const IndexPage = () => {
     }, []);
 
     return (
-        <div className="flex w-full h-screen justify-center items-center" id="home">
+        <div className="flex w-full h-screen bg-slate-400 justify-center items-center">
             <div className="text-center">
-                <h1 className="text-red-700 text-4xl font-bold">
-                    <span ref={typedRef} /> {/* Gán ref vào span */}
+                <h1 className="text-6xl font-extrabold text-white drop-shadow-lg">
+                    Hello, I&apos;m{" "}
+                    <span className="bg-gradient-to-r from-yellow-400 to-red-500 text-transparent bg-clip-text">
+                        Khanh
+                    </span>
                 </h1>
-                <p className="text-black text-2xl">Fullstack Developer</p>
+                <p className="text-4xl font-semibold text-black mt-4">
+                    <span ref={typedRef} className=" pr-2 animate-pulse" />
+                </p>
             </div>
         </div>
     );
