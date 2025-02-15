@@ -2,6 +2,7 @@ import Nav from "@/components/page/nav";
 import IndexPage from "@/components/page/indexpage";
 import About from "@/components/page/about";
 import Skill from "@/components/page/skill";
+import Project from "@/components/page/project";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
         </section>
 
         <section id="project" className="relative z-0 flex-grow ">
-          <h2>Projects Section</h2>
+          <Project />
         </section>
 
         <section id="contact" className="relative z-0 flex-grow ">
