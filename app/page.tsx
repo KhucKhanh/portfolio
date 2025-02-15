@@ -3,6 +3,7 @@ import IndexPage from "@/components/page/indexpage";
 import About from "@/components/page/about";
 import Skill from "@/components/page/skill";
 import Project from "@/components/page/project";
+import Contact from "@/components/page/contact";
 
 export default function Home() {
   return (
@@ -33,17 +34,9 @@ export default function Home() {
         </section>
 
         <section id="contact" className="relative z-0 flex-grow ">
-          <h2>Contact Section</h2>
+          <Contact />
         </section>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
+        
       </main>
     </div>
   );

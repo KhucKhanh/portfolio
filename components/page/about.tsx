@@ -10,7 +10,7 @@ const fadeInUp = {
 const About = () => {
     return (
         <div id="about" className="ml-5">
-            <motion.h2 
+            <motion.h2
                 className="text-2xl font-bold mb-4 text-black"
                 variants={fadeInUp}
                 initial="hidden"
@@ -22,12 +22,12 @@ const About = () => {
             </motion.h2>
 
             {/* Layout chính */}
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-8">
+            <div className="flex flex-col overflow-hidden md:flex-row items-center md:items-start w-full gap-4 md:gap-8">
                 {/* Hình ảnh */}
                 <motion.img
                     src="/meme-meo.jpg"
                     alt="khanh"
-                    className="w-full md:w-60 h-60 md:ml-5 mb-4 md:mb-0"
+                    className="w-full max-w-xs md:w-60 h-60 mx-auto md:ml-5 mb-4 md:mb-0 rounded-lg object-cover"
                     variants={fadeInUp}
                     initial="hidden"
                     whileInView="visible"
@@ -36,7 +36,7 @@ const About = () => {
                 />
 
                 {/* Thông tin cá nhân */}
-                <motion.div 
+                <motion.div
                     className="flex flex-col w-full md:text-left"
                     variants={fadeInUp}
                     initial="hidden"
